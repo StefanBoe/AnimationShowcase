@@ -40,22 +40,25 @@ class MainActivity : AppCompatActivity() {
         arrowToOverflow.toAnimation = getDrawable(R.drawable.avd_overflow_to_arrow) as AnimatedVectorDrawable
         arrowToOverflow.toAnimationSlow = getDrawable(R.drawable.avd_overflow_to_arrow_slow) as AnimatedVectorDrawable
         arrowToOverflow.init()
+        arrowToOverflow.morph()
         arrowToOverflow2.fromAnimation = getDrawable(R.drawable.avd_arrow_to_overflow) as AnimatedVectorDrawable
         arrowToOverflow2.fromAnimationSlow = getDrawable(R.drawable.avd_arrow_to_overflow_slow) as AnimatedVectorDrawable
         arrowToOverflow2.toAnimation = getDrawable(R.drawable.avd_overflow_to_arrow) as AnimatedVectorDrawable
         arrowToOverflow2.toAnimationSlow = getDrawable(R.drawable.avd_overflow_to_arrow_slow) as AnimatedVectorDrawable
         arrowToOverflow2.init()
+        arrowToOverflow2.morph()
         arrowToOverflow3.fromAnimation = getDrawable(R.drawable.avd_arrow_to_overflow) as AnimatedVectorDrawable
         arrowToOverflow3.fromAnimationSlow = getDrawable(R.drawable.avd_arrow_to_overflow_slow) as AnimatedVectorDrawable
         arrowToOverflow3.toAnimation = getDrawable(R.drawable.avd_overflow_to_arrow) as AnimatedVectorDrawable
         arrowToOverflow3.toAnimationSlow = getDrawable(R.drawable.avd_overflow_to_arrow_slow) as AnimatedVectorDrawable
         arrowToOverflow3.init()
+        arrowToOverflow3.morph()
         arrowToOverflow4.fromAnimation = getDrawable(R.drawable.avd_arrow_to_overflow) as AnimatedVectorDrawable
         arrowToOverflow4.fromAnimationSlow = getDrawable(R.drawable.avd_arrow_to_overflow_slow) as AnimatedVectorDrawable
         arrowToOverflow4.toAnimation = getDrawable(R.drawable.avd_overflow_to_arrow) as AnimatedVectorDrawable
         arrowToOverflow4.toAnimationSlow = getDrawable(R.drawable.avd_overflow_to_arrow_slow) as AnimatedVectorDrawable
         arrowToOverflow4.init()
-//TODO slow kaputt in CUSTOMIMAGE liegt nicht an animation
+        arrowToOverflow4.morph()
     }
 
     private fun setListeners(){

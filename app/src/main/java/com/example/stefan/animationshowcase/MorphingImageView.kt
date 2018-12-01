@@ -28,14 +28,14 @@ class MorphingImageView : android.support.v7.widget.AppCompatImageView {
 
     fun init() {
         isFromAnimation = false
-        setImageDrawable(fromAnimation)
+        setImageDrawable(if (isSlow) fromAnimationSlow else fromAnimation)
     }
 
     fun morph() {
         val drawable = if (isFromAnimation) fromAnimation else toAnimation
         val drawableSlow = if (isFromAnimation) fromAnimationSlow else toAnimationSlow
         setImageDrawable(if (isSlow) drawableSlow else drawable)
-        drawable?.start()
+        if (isSlow) drawableSlow?.start() else drawable?.start()
         isFromAnimation = !isFromAnimation
     }
 }
